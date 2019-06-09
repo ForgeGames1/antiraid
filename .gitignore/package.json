@@ -1,0 +1,19 @@
+{
+  "name": "AntiRaid",
+  "version": "0.0.1",
+  "main": "bot.js",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "mysql": "^2.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "bot.js"
+  },
+  "author": "ForgeGames",
+  "license": "ISC",
+  "description": "AntiRaid",
+  "keywords": [
+    "bot"
+  ]
+}
