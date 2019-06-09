@@ -1,8 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const AntiRaid = false;
 
 client.on('message', message => {
-     message.channel.sendMessage("t");
+     if(message.content === "antiraid"){
+          message.channel.sendMessage("AntiRaid " + !AntiRaid);
+          AntiRaid = !AntiRaid;
+     }
 });
 
 
