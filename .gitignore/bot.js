@@ -1,10 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const AntiRaid = false;
 
 client.on('message', message => {
-  if(message.content === "test123"){
-    message.delete(1);
-    message.channel.sendMessage("message suprimé");
+  if(message.content.startWith("..antiraid")){
+      message.channel.sendMessage("AntiRaid " + !AntiRaid);
+      AntiRaid = !AntiRaid;
   }
 });
 
